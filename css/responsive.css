@@ -1,0 +1,40 @@
+@media (max-width: 500px) {
+  :root {
+    font-size: 40%;
+  }
+
+  * {
+    line-height: 150%;
+  }
+
+  nav {
+    display: grid;
+    place-items: center;
+    gap: 1.5rem;
+  }
+
+  #app div {
+    padding: 4rem;
+    padding-top: 10rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  :root {
+    font-size: 45%;
+  }
+
+  #app div {
+    max-width: 80%;
+  }
+
+  * {
+    line-height: 200%;
+  }
+}
+
+@media (max-width: 1500px) {
+  :root {
+    font-size: 50%;
+  }
+}

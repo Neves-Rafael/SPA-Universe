@@ -1,0 +1,121 @@
+:root {
+  font-size: 62.5%;
+  --black: #000;
+  --white: #fff;
+  font-family: "Montserrat", sans-serif;
+  --blue-500: rgb(0, 170, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --web-font-smoothing: antialiased;
+  --moz-font-smoothing: grayscale;
+  line-height: 200%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5rem;
+  background-color: none;
+  padding-top: 5rem;
+  font-family: "Audiowide", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--blue-500);
+  transition: color 0.3s ease-in-out;
+}
+
+video {
+  z-index: -3;
+  inset: 0;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+body {
+  background-color: var(--black);
+  font-size: 1, 6rem;
+}
+
+img {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#logo {
+  width: 5rem;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Audiowide", sans-serif;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  color: var(--white);
+}
+
+p {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+#app div {
+  margin: auto;
+  max-width: 100rem;
+  text-align: center;
+  margin-top: 15rem;
+}
+
+#app .home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  max-width: 100%;
+  margin: 0;
+  padding-top: 0;
+  padding-left: 0;
+}
+
+button {
+  background: none;
+  border: 2px solid var(--white);
+  border-radius: 0.5rem;
+  padding: 2rem 3.2rem;
+  color: var(--white);
+  margin-top: 2rem;
+}
+
+button:hover {
+  background-color: var(--white);
+  color: var(--blue-500);
+  transition: all 0.2s ease-in-out;
+}
+
+p + p {
+  margin-top: 2rem;
+}
